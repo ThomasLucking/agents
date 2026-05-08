@@ -30,6 +30,21 @@ thomas-learning/
 ## Scripts
 
 ```bash
-./scripts/validate-skills.sh  # Lint all skill files — runs automatically on git commit
-./scripts/list-skills.sh      # Print all registered skills
+./scripts/new-skill.sh <domain> <folder> <name> <description>  # Scaffold a new skill, then validate and list
+./scripts/validate-skills.sh                                    # Lint all skill files — runs automatically on git commit
+./scripts/list-skills.sh                                        # Print all registered skills
+```
+
+`new-skill.sh` accepts all four arguments positionally, or runs interactively if you omit them:
+
+```bash
+# Non-interactive
+./scripts/new-skill.sh laravel hooks laravel-hooks "Trigger on Laravel lifecycle hook questions"
+
+# Interactive
+./scripts/new-skill.sh
+# > Domain: laravel
+# > Skill folder name: hooks
+# > Skill name: laravel-hooks
+# > One-line trigger description: Trigger on Laravel lifecycle hook questions
 ```

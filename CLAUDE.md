@@ -21,10 +21,13 @@ thomas-learning/
 
 ## Adding a New Skill
 
-1. Create a new folder: `mkdir <domain>/<skill-name>`
-2. Add a `SKILL.md` with valid frontmatter (see existing skills for the pattern)
-3. Run `./scripts/validate-skills.sh` to confirm it's well-formed
-4. Run `./scripts/list-skills.sh` to verify it appears in the registry
+Run the scaffold script — it handles folder creation, frontmatter, validation, and listing in one step:
+
+```bash
+./scripts/new-skill.sh <domain> <folder> <name> <description>
+```
+
+Or run it with no arguments for interactive prompts. After it runs, open the generated `SKILL.md` and fill in the skill content.
 
 ## Scripts
 
