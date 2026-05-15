@@ -1,5 +1,5 @@
 ---
-name: docker-skill
+name: docker-postgres-skill
 description: >
   Docker Compose + Dockerfile + PostgreSQL environment analysis and error diagnosis skill for Thomas's stack.
   Trigger this skill whenever Thomas mentions: docker-compose errors, container crashes, backend not connecting to DB,
