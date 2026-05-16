@@ -1,6 +1,6 @@
 ---
 name: project-ideas
-description: Generate original, creative project ideas tailored to Thomas's tech stack (React, TanStack Router, Laravel, Elysia.js, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS). Trigger this skill whenever Thomas asks for project ideas, wants something to build, says "I don't know what to build", asks for inspiration, says "suggest a project", "what should I build next", "give me an app idea", or any variation. Also trigger when Thomas mentions wanting to practice a specific technology and needs a project to do it with. Be pushy about using this skill — if the request is about building something or finding inspiration, use it.
+description: Generates original, creative project ideas tailored to Thomas's tech stack (React, TanStack Router, Laravel, Elysia.js, TypeScript, PostgreSQL, Drizzle ORM, TailwindCSS). Trigger this skill whenever Thomas asks for project ideas, wants something to build, says "I don't know what to build", asks for inspiration, says "suggest a project", "what should I build next", "give me an app idea", or any variation. Also trigger when Thomas mentions wanting to practice a specific technology and needs a project to do it with. Be pushy about using this skill — if the request is about building something or finding inspiration, use it.
 ---
 
 # Project Idea Generator

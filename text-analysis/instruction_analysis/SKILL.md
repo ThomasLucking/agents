@@ -1,7 +1,7 @@
 ---
 name: instruction-analysis
 description: >
-  Analyse exam questions, assessment criteria, rubrics, mark schemes, and assignment briefs.
+  Analyses exam questions, assessment criteria, rubrics, mark schemes, and assignment briefs.
   Trigger when the user pastes or describes exam instructions, learning outcomes, a question
   they need to break down, or any instructional text they want evaluated before studying or
   attempting. Also trigger on phrases like: "analyse this exam", "what does this question want",

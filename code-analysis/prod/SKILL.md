@@ -15,6 +15,25 @@ description: >
 **Stack:** Bun HTTP + WebSockets · PostgreSQL · Drizzle ORM · Zustand v5 · React 19 · TanStack Router v1  
 **Tools available:** `bash_tool`, `view`, GitHub CLI (`gh`)
 
+## Analysis Progress
+
+Copy this checklist and check off each phase as you complete it:
+
+```
+Analysis Progress:
+- [ ] Phase 0: Verify package versions before flagging anything
+- [ ] Phase 1: Gather context (structure, git log, dependencies)
+- [ ] Phase 2.1: Repetition & DRY
+- [ ] Phase 2.2: Code Simplification
+- [ ] Phase 2.3: Code Organization
+- [ ] Phase 2.4: SOLID Principles
+- [ ] Phase 2.5: Stack-Specific Anti-Patterns
+- [ ] Phase 2.6: Commit Convention
+- [ ] Phase 3: Library Suggestions (context-gated)
+- [ ] Phase 4: Format and output report
+- [ ] Phase 5: Verification checklist before submitting
+```
+
 ---
 
 ## Phase 0 — Before You Say Anything, Verify

@@ -1,7 +1,7 @@
 ---
 name: schematic-writer
 description: >
-  Produce architecture schematics and call-graph documentation in the style of Thomas's
+  Produces architecture schematics and call-graph documentation in the style of Thomas's
   existing codebase docs. Use this skill whenever Thomas asks for a "schematic", "architecture doc",
   "call graph", "data flow diagram", or says things like "document how X works", "write a schematic
   for X", "map out the flow of X", or "explain the architecture of X in schematic form".

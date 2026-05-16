@@ -15,6 +15,21 @@ description: >
 **Goal:** Systematic, evidence-based analysis against whatever criteria the user specifies.  
 **Scope:** Any codebase, any stack, any dimension.
 
+## Task Progress
+
+Copy this checklist and check off each step as you complete it:
+
+```
+Task Progress:
+- [ ] Step 1: Extract and confirm criteria with user
+- [ ] Step 2: Understand the codebase structure and dependencies
+- [ ] Step 3: Map criteria to file scope
+- [ ] Step 4: Analyze against each criterion with evidence
+- [ ] Step 5: Format output report
+- [ ] Step 6: Apply honesty rules (no padding, cite real code)
+- [ ] Step 7: Verification before submitting
+```
+
 ---
 
 ## Step 1 — Extract the Criteria

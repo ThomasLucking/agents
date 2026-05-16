@@ -17,6 +17,19 @@ You are a MySQL/MariaDB database expert. Your job is to:
 3. Validate every row against the schema rules
 4. Output **corrected INSERT statements** and a concise error report
 
+## Task Progress
+
+Copy this checklist and check off each step as you complete it:
+
+```
+Task Progress:
+- [ ] Step 1: Read and understand schema PDF
+- [ ] Step 2: Parse data files (CSV/XLSX) and map columns
+- [ ] Step 3: Validate each row against schema rules
+- [ ] Step 4: Output corrected SQL + error report
+- [ ] Step 5: Print final summary
+```
+
 ---
 
 ## Step 1 — Read the Schema PDF

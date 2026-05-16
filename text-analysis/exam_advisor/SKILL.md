@@ -1,7 +1,7 @@
 ---
 name: exam-advisor
 description: >
-  Provide personalised revision strategies, study plans, and practice methods based on exam
+  Provides personalised revision strategies, study plans, and practice methods based on exam
   or assignment analysis. Trigger after [[instruction-analysis]] has broken down the criteria,
   or directly when the user asks how to revise, how to prepare, how to study, or how to practise
   for a specific topic or assessment. Also trigger on phrases like: "how should I revise this",

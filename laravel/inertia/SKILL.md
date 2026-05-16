@@ -235,14 +235,7 @@ router.delete(route('users.destroy', id), { preserveScroll: true })
 
 ## 9. Optimistic Updates `[v3]`
 
-```jsx
-router.post(route('likes.store', post.id), {}, {
-  optimistic: ({ props }) => ({
-    post: { ...props.post, likes_count: props.post.likes_count + 1 }
-  }),
-  // auto-rolls back on server error
-})
-```
+See [v3.md](v3.md) for optimistic updates and all other v3-only features (instant visits, prefetching, `useHttp`, `once` props, layout props, `preserveErrors`).
 
 ---
 
@@ -328,14 +321,4 @@ For global 404/500 pages, create `Pages/Error.jsx` and configure in `HandleExcep
 
 ## Version Summary
 
-| Feature | v2 | v3 (beta) |
-|---|---|---|
-| React requirement | 18 | 19 |
-| Laravel requirement | 10+ | 11+ |
-| Axios | included | removed (built-in XHR) |
-| Vite plugin auto-setup | manual | `@inertiajs/vite` |
-| Deferred props | `Inertia::lazy()` | `Inertia::optional()` |
-| Optimistic updates | ❌ | ✅ `router.post(..., { optimistic })` |
-| `useHttp` | ❌ | ✅ |
-| Instant visits | ❌ | ✅ |
-| SSR in dev | separate Node process | automatic via Vite |
+See [v3.md](v3.md) for the complete v2 → v3 migration reference and all v3-specific features.
