@@ -4,24 +4,54 @@ Personal Claude Code skills and reference material.
 
 ## Skills
 
-| Skill | Trigger | Description |
+| Skill | Path | Description |
 |---|---|---|
-| `laravel-inertia-snippets` | Inertia, useForm, usePage, `Inertia::render` | Best practices for Laravel 11 + Inertia.js v2/v3 + React |
-| `laravel-best-practices` | "how do I implement X in Laravel", reviewing Laravel code | Laravel 12 — use what the framework already provides |
-| `codebase-analysis` | "review code", "audit architecture", "analyze codebase" | Production-grade review for Bun/React/Drizzle/Zustand stack |
-| `custom-analysis` | "analyze this for X", "audit X", "review X" | User-defined codebase analysis against any criteria |
-| `thomas-learning` | "explain X", "how does X work", "teach me X" | Personal learning guide — explanations pitched at intermediate level |
+| `codebase-analysis` | `code-analysis/prod/` | Production-grade review for Bun/React/TanStack/Zustand/Drizzle/PostgreSQL stack |
+| `custom-analysis` | `code-analysis/custom/` | User-defined codebase analysis against any criteria or lens |
+| `db-insert-validator` | `db-insert-validator/` | Validate and fix INSERT statements derived from CSV/XLSX against a MySQL/MariaDB schema |
+| `docker-postgres-debug` | `docker-postgres-skill/` | Docker Compose + PostgreSQL environment diagnosis and error triage |
+| `git-workflow` | `git/workflow/` | Branching, PRs, merge conflicts, commit hygiene, and group project etiquette |
+| `grilling-designs` | `grill/` | Stress-test a plan or design by relentless questioning until shared understanding |
+| `laravel-best-practices` | `laravel/best-practices/` | Laravel 12 — use what the framework already provides |
+| `laravel-inertia-snippets` | `laravel/inertia/` | Best practices for Laravel + Inertia.js v2/v3 + React |
+| `project-ideas` | `project-ideas/` | Generate original project ideas tailored to Thomas's stack |
+| `schematic-writer` | `schematics/` | Architecture schematics, call graphs, and data flow docs |
+| `exam-advisor` | `text-analysis/exam_advisor/` | Personalised revision strategies and study plans |
+| `instruction-analysis` | `text-analysis/instruction_analysis/` | Break down exam questions, rubrics, and assignment briefs |
+| `thomas-learning` | `thomas-learning/` | Concept explanations pitched at intermediate-to-senior level |
 
 ## Structure
 
 ```
-laravel/
-  inertia/SKILL.md            # Laravel + Inertia.js v2/v3 + React
-  best-practices/SKILL.md     # Laravel 12 built-in features reference
-
 code-analysis/
   custom/SKILL.md             # Custom criteria analysis (any stack)
   prod/SKILL.md               # Production analysis (Bun/React/Drizzle/Zustand)
+
+db-insert-validator/
+  SKILL.md                    # CSV/XLSX → MySQL INSERT validation
+
+docker-postgres-skill/
+  SKILL.md                    # Docker Compose + PostgreSQL debugging
+
+git/
+  workflow/SKILL.md           # Git workflow for collaborating in teams
+
+grill/
+  SKILL.md                    # Design stress-tester
+
+laravel/
+  best-practices/SKILL.md    # Laravel 12 built-in features reference
+  inertia/SKILL.md            # Laravel + Inertia.js v2/v3 + React
+
+project-ideas/
+  SKILL.md                    # Project idea generator
+
+schematics/
+  SKILL.md                    # Architecture schematic writer
+
+text-analysis/
+  exam_advisor/SKILL.md       # Revision strategy and study planning
+  instruction_analysis/SKILL.md  # Exam/rubric breakdown
 
 thomas-learning/
   SKILL.md                    # Personal learning skill
