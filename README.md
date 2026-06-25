@@ -10,10 +10,8 @@ Personal Claude Code skills and reference material.
 | `custom-analysis` | `code-analysis/custom/` | User-defined codebase analysis against any criteria or lens |
 | `db-insert-validator` | `db-insert-validator/` | Validate and fix INSERT statements derived from CSV/XLSX against a MySQL/MariaDB schema |
 | `docker-postgres-debug` | `docker-postgres-skill/` | Docker Compose + PostgreSQL environment diagnosis and error triage |
-| `git-workflow` | `git/workflow/` | Branching, PRs, merge conflicts, commit hygiene, and group project etiquette |
 | `grilling-designs` | `grill/` | Stress-test a plan or design by relentless questioning until shared understanding |
-| `laravel-best-practices` | `laravel/best-practices/` | Laravel 12 — use what the framework already provides |
-| `laravel-inertia-snippets` | `laravel/inertia/` | Best practices for Laravel + Inertia.js v2/v3 + React |
+| `Laravel Best Practices` | `laravel/best-practices/` | Laravel 12 — use what the framework already provides |
 | `project-ideas` | `project-ideas/` | Generate original project ideas tailored to Thomas's stack |
 | `schematic-writer` | `schematics/` | Architecture schematics, call graphs, and data flow docs |
 | `exam-advisor` | `text-analysis/exam_advisor/` | Personalised revision strategies and study plans |
@@ -22,26 +20,33 @@ Personal Claude Code skills and reference material.
 
 ## Structure
 
+Each skill has a concise `SKILL.md` core (under 100 lines) with extended detail in `references/` files loaded on demand.
+
 ```
 code-analysis/
-  custom/SKILL.md             # Custom criteria analysis (any stack)
-  prod/SKILL.md               # Production analysis (Bun/React/Drizzle/Zustand)
+  custom/
+    SKILL.md                  # Custom criteria analysis (any stack)
+    references/playbooks.md   # Grep commands per audit type
+  prod/
+    SKILL.md                  # Production analysis (Bun/React/Drizzle/Zustand)
+    references/anti-patterns.md
+    references/solid.md
+    references/structure.md
 
 db-insert-validator/
   SKILL.md                    # CSV/XLSX → MySQL INSERT validation
 
 docker-postgres-skill/
   SKILL.md                    # Docker Compose + PostgreSQL debugging
-
-git/
-  workflow/SKILL.md           # Git workflow for collaborating in teams
+  references/canonical-configs.md  # Dockerfile and docker-compose.yml templates
 
 grill/
   SKILL.md                    # Design stress-tester
 
 laravel/
-  best-practices/SKILL.md    # Laravel 12 built-in features reference
-  inertia/SKILL.md            # Laravel + Inertia.js v2/v3 + React
+  best-practices/
+    SKILL.md                  # Laravel 12 built-in features reference
+    references/               # Eloquent, validation, security, queues, mail, notifications
 
 project-ideas/
   SKILL.md                    # Project idea generator
@@ -50,8 +55,13 @@ schematics/
   SKILL.md                    # Architecture schematic writer
 
 text-analysis/
-  exam_advisor/SKILL.md       # Revision strategy and study planning
-  instruction_analysis/SKILL.md  # Exam/rubric breakdown
+  exam_advisor/
+    SKILL.md                  # Revision strategy and study planning
+    references/techniques.md
+    references/study-plan.md
+  instruction_analysis/
+    SKILL.md                  # Exam/rubric breakdown
+    references/ai-brief-template.md
 
 thomas-learning/
   SKILL.md                    # Personal learning skill
