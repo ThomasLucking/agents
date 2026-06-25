@@ -1,6 +1,9 @@
 ---
-name: Laravel Best Practices
-description: Enforces Laravel conventions and best practices when writing or reviewing Laravel code
+name: laravel-best-practices
+description: >
+  Trigger when writing, reviewing, or debugging Laravel code. Enforces framework conventions:
+  thin controllers, Form Requests for validation, Eloquent over raw queries, and proper use of
+  built-in features. Also trigger on questions about Laravel architecture or "how do I do X in Laravel".
 ---
 
 ## Core conventions

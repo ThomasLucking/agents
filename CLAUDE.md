@@ -55,8 +55,19 @@ Or run it with no arguments for interactive prompts. After it runs, open the gen
 
 | Script | Purpose |
 |---|---|
-| `./scripts/validate-skills.sh` | Lint all skill files — checks naming and required frontmatter |
-| `./scripts/list-skills.sh` | Print all registered skills with name and file path |
+| `./scripts/new-skill.sh <domain> <folder> <name> <desc>` | Scaffold a new skill with spec-compliant frontmatter |
+| `./scripts/validate-skills.sh` | Spec compliance check — runs automatically on every commit |
+| `./scripts/test-skill.sh [skill-dir]` | Quality check a skill: description, referenced files, progressive disclosure |
+| `./scripts/list-skills.sh` | Print all registered skills |
+
+### Skill creation workflow
+
+```bash
+./scripts/new-skill.sh <domain> <folder> <name> <description>  # scaffold
+# fill in SKILL.md body
+./scripts/test-skill.sh <domain>/<folder>                       # quality check
+./scripts/validate-skills.sh                                    # spec compliance
+```
 
 ## Conventions
 

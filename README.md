@@ -69,22 +69,27 @@ thomas-learning/
 
 ## Scripts
 
-```bash
-./scripts/new-skill.sh <domain> <folder> <name> <description>  # Scaffold a new skill, then validate and list
-./scripts/validate-skills.sh                                    # Lint all skill files — runs automatically on git commit
-./scripts/list-skills.sh                                        # Print all registered skills
-```
+| Script | Purpose |
+|---|---|
+| `./scripts/new-skill.sh` | Scaffold a new skill — validates name format, creates SKILL.md, optionally creates references/ |
+| `./scripts/validate-skills.sh` | Spec compliance check — name format, description length, line count, placeholders. Runs on every commit. |
+| `./scripts/test-skill.sh` | Quality check — description trigger keywords, referenced files exist, progressive disclosure, body content |
+| `./scripts/list-skills.sh` | Print all registered skills with name and path |
 
-`new-skill.sh` accepts all four arguments positionally, or runs interactively if you omit them:
+### Workflow for creating a skill
 
 ```bash
-# Non-interactive
+# 1. Scaffold
 ./scripts/new-skill.sh laravel hooks laravel-hooks "Trigger on Laravel lifecycle hook questions"
 
-# Interactive
-./scripts/new-skill.sh
-# > Domain: laravel
-# > Skill folder name: hooks
-# > Skill name: laravel-hooks
-# > One-line trigger description: Trigger on Laravel lifecycle hook questions
+# 2. Fill in the SKILL.md body
+# (open laravel/hooks/SKILL.md and write the instructions)
+
+# 3. Quality check
+./scripts/test-skill.sh laravel/hooks
+
+# 4. Spec compliance (also runs automatically on commit)
+./scripts/validate-skills.sh
 ```
+
+`new-skill.sh` accepts all four arguments positionally, or runs interactively with no arguments.
