@@ -1,0 +1,5 @@
+# Skills installed from external sources — not managed by this repo.
+# One directory name per line. push-skill.sh will not sync these back to GitHub.
+agent-browser
+find-skills
+frontend-design
