@@ -7,35 +7,36 @@ A personal collection of Claude Code skills and reference material for Thomas's 
 Each skill lives in its own subfolder with a `SKILL.md` file. Claude Code loads skills by finding `SKILL.md` files — **do not rename them**.
 
 ```
+agent-implementer/
+  SKILL.md                    # fix-simple-issues-implementer: implement one GitHub issue in a worktree
+
+agent-diff-reviewer/
+  SKILL.md                    # Read-only diff review sub-agent spawned by agent-implementer
+
 code-analysis/
   custom/SKILL.md             # User-defined codebase analysis (any stack, any criteria)
   prod/SKILL.md               # Production-level analysis for Bun/React/Drizzle/Zustand stack
-
-db-insert-validator/
-  SKILL.md                    # Validate/fix INSERTs from CSV/XLSX against MySQL/MariaDB schema
-
-docker-postgres-skill/
-  SKILL.md                    # Docker Compose + PostgreSQL environment diagnosis
-
-git/
-  workflow/SKILL.md           # Branching, PRs, merge conflicts, commit hygiene
 
 grill/
   SKILL.md                    # Stress-test plans and designs by relentless questioning
 
 laravel/
-  best-practices/SKILL.md    # Laravel 12 — use what the framework already provides
-  inertia/SKILL.md            # Laravel + Inertia.js v2/v3 + React patterns
+  best-practices/SKILL.md     # Laravel 12 — use what the framework already provides
 
 project-ideas/
   SKILL.md                    # Generate project ideas tailored to Thomas's stack
 
+prompt-improver/
+  SKILL.md                    # Rewrite a draft AI prompt using prompt-engineering best practices
+
 schematics/
   SKILL.md                    # Architecture schematics, call graphs, data flow docs
 
-text-analysis/
-  exam_advisor/SKILL.md       # Personalised revision strategies and study plans
-  instruction_analysis/SKILL.md  # Break down exam questions, rubrics, assignment briefs
+skill-improver/
+  SKILL.md                    # Audit/rewrite this repo's skills against agentskills.io best practices
+
+think-twice/
+  SKILL.md                    # Pause before expensive work to find the cheaper path
 
 thomas-learning/
   SKILL.md                    # Personal learning guide — intermediate-to-senior level
