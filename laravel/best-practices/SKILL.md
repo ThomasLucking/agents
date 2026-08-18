@@ -15,6 +15,7 @@ description: >
 - Soft-deleted models require `withTrashed()` or results silently exclude them
 - `->get()` always returns a Collection, never null — check `->isEmpty()` not null
 - Mass assignment requires `$fillable` or `$guarded` — forgetting causes silent failures
+- As of v13.8.0, API routes render JSON exceptions by default — no custom exception handler configuration needed; remove any manual JSON exception rendering added before this version
 
 ## References (load on demand)
 - Read `references/eloquent-patterns.md` if writing or reviewing Eloquent queries, scopes, casts, or model events
