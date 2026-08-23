@@ -47,34 +47,9 @@ Both must be clean before it's done:
 ./vendor/bin/pint
 ./vendor/bin/phpstan analyse
 ```
-
-### 4. Log
-
-Write `docs/logs/issue-<N>-agent-trace.md`. Terse and scannable — bullets,
-not paragraphs. A reviewer should orient in under a minute.
-
-```markdown
-# Issue #<N>: <short title>
-
-## The issue
-<2–3 lines: what was broken/missing and the root cause.>
-
-## Changes
-- `<file>` — <what changed> → <why>
-- `<file>` — <what changed> → <why>
-
-## How it fits together
-<3–5 lines or a short list: which files/folders were touched and how they
-connect to solve the issue. e.g. request → FormRequest validates →
-Controller delegates → Service applies rule → Model persists.>
-```
-
-Rules: no change without a `why`. No paragraph over ~40 words. Skip
-anything the diff already says plainly.
-
 ### 5. Review pass
 
-After the log is written, spawn a review agent:
+when you are reviewing you must use the skill 'code-review' to do so.
 
 ```
 Agent(subagent_type: "general-purpose", model: "haiku",
