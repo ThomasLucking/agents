@@ -7,11 +7,14 @@ A personal collection of Claude Code skills and reference material for Thomas's 
 Each skill lives in its own subfolder with a `SKILL.md` file. Claude Code loads skills by finding `SKILL.md` files — **do not rename them**.
 
 ```
-agent-implementer/
-  SKILL.md                    # fix-simple-issues-implementer: implement one GitHub issue in a worktree
+agent-implement-generic/    # symlink -> ~/agentic-engineering/agent-implement-generic
+  SKILL.md                    # fix-simple-issues-implementer-generic: implement one GitHub issue in a worktree (stack-agnostic)
+
+agent-implement-laravel/    # symlink -> ~/agentic-engineering/agent-implement-laravel
+  SKILL.md                    # fix-simple-issues-implementer: implement one GitHub issue in a worktree (Laravel/Sail)
 
 agent-diff-reviewer/
-  SKILL.md                    # Read-only diff review sub-agent spawned by agent-implementer
+  SKILL.md                    # Read-only diff review sub-agent
 
 code-analysis/
   custom/SKILL.md             # User-defined codebase analysis (any stack, any criteria)
