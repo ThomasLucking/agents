@@ -18,7 +18,7 @@
 | Source | Where | What it brings | Verdict |
 | --- | --- | --- | --- |
 | **mattpocock/skills** | `~/.agents/skills` | grilling, domain modelling, spec → tickets → implement, tdd, debugging | **Base.** Update deliberately; upstream renames often. |
-| **My own skills** | `~/Agents/*`, `~/agentic-engineering/*`, plain folders in `~/.claude/skills` | Stack-specific (Laravel, Bun/Drizzle), learning, schematics, PR comments | **Keep.** Dedupe with the `anthropic-skills:*` copies. |
+| **My own skills** | `~/Agents/*`, plain folders in `~/.claude/skills` | Stack-specific (Laravel, Bun/Drizzle), learning, schematics, PR comments | **Keep.** Dedupe with the `anthropic-skills:*` copies. |
 | **`anthropic-skills:*`** | claude.ai sync | Copies of my skills + docx/pdf/pptx/xlsx | **Keep the office ones.** The copies drift from the local ones. |
 | **Other packs** | `~/.agents/skills` | shadcn, vue, laravel-owasp, improve, agent-browser | **Keep**, stack-specific. |
 | **ponytail** plugin | marketplace | Always-on "do less", review/audit/debt skills | **Keep for side projects.** Fights `codebase-design` on deep-module projects. |
@@ -205,4 +205,4 @@ Order of preference when a rule matters, or an agent breaks it twice:
 - [ ] **ctx7 `@latest`** in `CLAUDE.md`: pin a version, or rely on `find-docs` only?
 - [ ] **Synced `anthropic-skills:*` copies:** delete them on claude.ai, or stop editing the local ones?
 - [ ] **`paths:` scoping** for the Laravel / Vue / shadcn skills.
-- [ ] **Commit** the `~/Agents` symlink deletions (6 `D`) and the `~/agentic-engineering` edits (2 `M`).
+- [x] **Commit** the `~/Agents` changes and merge `~/agentic-engineering` into it (done 2026-10-05).
