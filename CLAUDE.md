@@ -4,9 +4,19 @@ A personal collection of Claude Code skills and reference material for Thomas's 
 
 ## Structure
 
-Each skill lives in its own subfolder with a `SKILL.md` file. Claude Code loads skills by finding `SKILL.md` files — **do not rename them**.
+Each skill lives in its own subfolder with a `SKILL.md` file. Claude Code loads skills by finding `SKILL.md` files — **do not rename them**. Extended detail goes in `references/`, loaded on demand. Run `./scripts/list-skills.sh` for the current list.
 
-Run `./scripts/list-skills.sh` for the current list. Each skill is one folder with a `SKILL.md`; extended detail goes in `references/`, loaded on demand.
+- `SKILLS-ROUTING.md`: which skill to pick per job. Symlinked to `~/.claude/SKILLS-ROUTING.md`, which the global `CLAUDE.md` points to.
+- `SKILLS.md`: audit of every installed skill (keep / removed / why). Symlinked to `~/.claude/SKILLS.md`.
+
+## Sync
+
+`~/.claude/skills` is the source of truth. The launchd job `com.thomaslucking.skills-sync` runs `scripts/push-skill.sh` on every change there: rsync into this repo, then commit and push. It never deletes, so remove a skill in both places. Log: `~/.claude/skills-sync.log`.
+
+- Never symlink a `~/.claude/skills` entry back into this repo: rsync fails with `unlinkat: Directory not empty` and nothing syncs.
+- External skills (`~/.agents/skills`, installed with `npx skills`) stay symlinks; list the ones to skip in `.skillsignore`.
+- `synced/` is claude.ai's copy of account skills; it is gitignored. Delete those on claude.ai, not here.
+- `SKILLS.md` and `SKILLS-ROUTING.md` live outside `~/.claude/skills`, so commit and push them by hand.
 
 ## Adding a New Skill
 
