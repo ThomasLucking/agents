@@ -1,11 +1,11 @@
 ---
 name: pr-review
-description: Reviews a GitHub pull request by running the /code-review skill on its diff, then posts every finding as a Greptile-style inline PR review comment (bold title, "Prompt To Fix With AI" block, Fix in Claude Code / Fix in Codex buttons) through the GitHub API under the user's own gh account. Trigger on "review my PR", "review PR #12", "pr-review", or "/pr-review".
+description: Reviews a GitHub pull request by running the /code-review-deep skill on its diff, then posts every finding as a Greptile-style inline PR review comment (bold title, "Prompt To Fix With AI" block, Fix in Claude Code / Fix in Codex buttons) through the GitHub API under the user's own gh account. Trigger on "review my PR", "review PR #12", "pr-review", or "/pr-review".
 ---
 
 # PR Review
 
-Run `/code-review` against a PR's diff, render each finding in the Greptile comment format, and post them as one GitHub review from the user's account (whoever `gh` is authenticated as). No severity badge (no P1/P2).
+Run `/code-review-deep` against a PR's diff, render each finding in the Greptile comment format, and post them as one GitHub review from the user's account (whoever `gh` is authenticated as). No severity badge (no P1/P2).
 
 ## 1. Resolve the PR
 
@@ -22,7 +22,7 @@ Run `/code-review` against a PR's diff, render each finding in the Greptile comm
 
 ## 2. Run the code review
 
-Invoke the `code-review` skill with the Skill tool, passing the PR diff and title as the review target. Review only lines changed in the diff.
+Invoke the `code-review-deep` skill with the Skill tool, passing the PR diff and title as the review target. Review only lines changed in the diff.
 
 Keep only **Critical** and **Important** findings that you have verified against the actual code (read the file, confirm the failure scenario). Drop Suggestions unless the user asked for them.
 
