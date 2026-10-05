@@ -4,69 +4,7 @@ Personal Claude Code skills and reference material.
 
 ## Skills
 
-| Skill | Path | Description |
-|---|---|---|
-| `fix-simple-issues-implementer` | `agent-implementer/` | Implement a single labeled GitHub issue in an isolated worktree, review-ready |
-| `agent-diff-reviewer` | `agent-diff-reviewer/` | Haiku sub-agent that reviews an implementer agent's diff before a human sees it |
-| `codebase-analysis` | `code-analysis/prod/` | Production-grade review for Bun/React/TanStack/Zustand/Drizzle/PostgreSQL stack |
-| `custom-analysis` | `code-analysis/custom/` | User-defined codebase analysis against any criteria or lens |
-| `grilling-designs` | `grill/` | Stress-test a plan or design by relentless questioning until shared understanding |
-| `laravel-best-practices` | `laravel/best-practices/` | Laravel 12 — use what the framework already provides |
-| `project-ideas` | `project-ideas/` | Generate original project ideas tailored to Thomas's stack |
-| `prompt-improver` | `prompt-improver/` | Rewrite a draft AI prompt using prompt-engineering best practices |
-| `schematic-writer` | `schematics/` | Architecture schematics, call graphs, and data flow docs |
-| `skill-improver` | `skill-improver/` | Audit and rewrite this repo's own skills against agentskills.io best practices |
-| `think-twice` | `think-twice/` | Pause before expensive work to find the cheaper path |
-| `thomas-learning` | `thomas-learning/` | Concept explanations pitched at intermediate-to-senior level |
-
-## Structure
-
-Each skill has a concise `SKILL.md` core (under 100 lines) with extended detail in `references/` files loaded on demand.
-
-```
-agent-implementer/
-  SKILL.md                    # fix-simple-issues-implementer: worktree → implement → validate → log → review
-
-agent-diff-reviewer/
-  SKILL.md                    # Read-only diff review, spawned by agent-implementer step 5
-
-code-analysis/
-  custom/
-    SKILL.md                  # Custom criteria analysis (any stack)
-    references/playbooks.md   # Grep commands per audit type
-  prod/
-    SKILL.md                  # Production analysis (Bun/React/Drizzle/Zustand)
-    references/anti-patterns.md
-    references/solid.md
-    references/structure.md
-
-grill/
-  SKILL.md                    # Design stress-tester
-
-laravel/
-  best-practices/
-    SKILL.md                  # Laravel 12 built-in features reference
-    references/                # Eloquent, validation, security, queues, mail, notifications
-
-project-ideas/
-  SKILL.md                    # Project idea generator
-
-prompt-improver/
-  SKILL.md                    # AI prompt rewriter
-  references/principles.md    # Full prompting-principle catalog with before/after pairs
-
-schematics/
-  SKILL.md                    # Architecture schematic writer
-
-skill-improver/
-  SKILL.md                    # Audits/rewrites skills in this repo for efficiency and spec compliance
-
-think-twice/
-  SKILL.md                    # Cheaper-path check before heavy/repetitive work
-
-thomas-learning/
-  SKILL.md                    # Personal learning skill
-```
+Run `./scripts/list-skills.sh` for the current list. Each skill is one folder with a `SKILL.md`; extended detail goes in `references/`, loaded on demand.
 
 ## Adding a New Skill
 
@@ -108,6 +46,4 @@ Or run it with no arguments for interactive prompts. After it runs, open the gen
 
 ### Workflow for improving a skill
 
-Use the `skill-improver` skill directly in conversation ("improve the X skill", "audit my skills") — it runs
-`validate-skills.sh` and `test-skill.sh` against the target, checks it against the [agentskills.io](https://agentskills.io/skill-creation/best-practices)
-checklist, and applies fixes.
+Use the `writing-for-agents` skill, then run `test-skill.sh` and `validate-skills.sh` on the target.

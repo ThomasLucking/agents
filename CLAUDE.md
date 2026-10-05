@@ -6,44 +6,7 @@ A personal collection of Claude Code skills and reference material for Thomas's 
 
 Each skill lives in its own subfolder with a `SKILL.md` file. Claude Code loads skills by finding `SKILL.md` files — **do not rename them**.
 
-```
-agent-implement-generic/    # symlink -> ~/agentic-engineering/agent-implement-generic
-  SKILL.md                    # fix-simple-issues-implementer-generic: implement one GitHub issue in a worktree (stack-agnostic)
-
-agent-implement-laravel/    # symlink -> ~/agentic-engineering/agent-implement-laravel
-  SKILL.md                    # fix-simple-issues-implementer: implement one GitHub issue in a worktree (Laravel/Sail)
-
-agent-diff-reviewer/
-  SKILL.md                    # Read-only diff review sub-agent
-
-code-analysis/
-  custom/SKILL.md             # User-defined codebase analysis (any stack, any criteria)
-  prod/SKILL.md               # Production-level analysis for Bun/React/Drizzle/Zustand stack
-
-grill/
-  SKILL.md                    # Stress-test plans and designs by relentless questioning
-
-laravel/
-  best-practices/SKILL.md     # Laravel 12 — use what the framework already provides
-
-project-ideas/
-  SKILL.md                    # Generate project ideas tailored to Thomas's stack
-
-prompt-improver/
-  SKILL.md                    # Rewrite a draft AI prompt using prompt-engineering best practices
-
-schematics/
-  SKILL.md                    # Architecture schematics, call graphs, data flow docs
-
-skill-improver/
-  SKILL.md                    # Audit/rewrite this repo's skills against agentskills.io best practices
-
-think-twice/
-  SKILL.md                    # Pause before expensive work to find the cheaper path
-
-thomas-learning/
-  SKILL.md                    # Personal learning guide — intermediate-to-senior level
-```
+Run `./scripts/list-skills.sh` for the current list. Each skill is one folder with a `SKILL.md`; extended detail goes in `references/`, loaded on demand.
 
 ## Adding a New Skill
 
