@@ -8,6 +8,7 @@ Each skill lives in its own subfolder with a `SKILL.md` file. Claude Code loads 
 
 - `SKILLS-ROUTING.md`: which skill to pick per job. Symlinked to `~/.claude/SKILLS-ROUTING.md`, which the global `CLAUDE.md` points to.
 - `SKILLS.md`: audit of every installed skill (keep / removed / why). Symlinked to `~/.claude/SKILLS.md`.
+- `global-CLAUDE.md`: the user-wide instructions. Symlinked to `~/.claude/CLAUDE.md`, so it loads in every project.
 
 ## Sync
 
@@ -16,7 +17,7 @@ Each skill lives in its own subfolder with a `SKILL.md` file. Claude Code loads 
 - Never symlink a `~/.claude/skills` entry back into this repo: rsync fails with `unlinkat: Directory not empty` and nothing syncs.
 - External skills (`~/.agents/skills`, installed with `npx skills`) stay symlinks; list the ones to skip in `.skillsignore`.
 - `synced/` is claude.ai's copy of account skills; it is gitignored. Delete those on claude.ai, not here.
-- `SKILLS.md` and `SKILLS-ROUTING.md` live outside `~/.claude/skills`, so commit and push them by hand.
+- `SKILLS.md`, `SKILLS-ROUTING.md` and `global-CLAUDE.md` live outside `~/.claude/skills`, so commit and push them by hand.
 
 ## Adding a New Skill
 
