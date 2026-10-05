@@ -98,10 +98,10 @@ Legend:
 | Skill | Verdict | Note |
 | --- | --- | --- |
 | `quiz-and-delete` | Keep, Manual | **Main learning step**: quiz on the code the agent wrote, delete what I can't explain, rewrite it. |
-| `thomas-learning` | Keep | Quick "explain X". |
+| `thomas-learning` | Keep | Quick "explain X". ADHD format: one line, short analogy, example, one "your turn" question. Includes the teaching rules from `learn` (diagnose first, one step per turn, stuck vs impatient, stop when understood). |
 | `teach` | Keep, Manual | Multi-session course in its own folder (mission, lessons, records). Different job from `thomas-learning`, not a duplicate. |
 | `vibe-wise:learn` | Decide | Overlaps `quiz-and-delete`. Keep one. |
-| `anthropic-skills:learn`, `anthropic-skills:thomas-learning` | Merge | Synced copies. |
+| `anthropic-skills:learn`, `anthropic-skills:thomas-learning` | Merged | Merged into `thomas-learning` (2026-10-05). The synced copies are stale until the local `thomas-learning` is re-uploaded on claude.ai. |
 | `copy-test-practice` | Keep | Module 117. |
 
 ### Session and meta

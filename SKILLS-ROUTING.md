@@ -15,6 +15,7 @@ Read when several skills could fit, or when planning a feature. Pick one skill p
 | One GitHub issue, end to end | `agent-implement-generic` | |
 | Bug, error, regression, slowness | `diagnosing-bugs` | guessing a fix first |
 | Library / framework API | `find-docs` | memory |
+| Explain or teach a concept ("what is X", "how does X work") | `thomas-learning` | `anthropic-skills:learn`, `anthropic-skills:thomas-learning` |
 | Anything in a browser | `agent-browser` | WebFetch |
 | Steps only the human can do (secrets, dashboards) | `wizard` | |
 | PR body | `pr` | |
