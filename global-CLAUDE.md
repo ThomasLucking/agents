@@ -33,6 +33,13 @@ Use before/instead of manual git+test+lint+process checks when assessing a proje
 # Library docs
 Before writing or changing code that touches a library, framework, SDK, CLI or cloud API, use the `find-docs` skill (ctx7). Skip for pure business logic.
 
+# PDF parsing
+- Read PDFs with `glyphrush parse <file.pdf> --format json`. Use `pdftotext -layout` only as a second opinion or if glyphrush is missing.
+- Check `global_diagnostics.warnings` and report any entries.
+- Per page (`pages[]`): if `route.run_ocr` is true or `quality.flags` is non-empty, that page's text is unreliable. Flag it, don't trust it.
+- Page text is in `pages[].layout_blocks[].text`. Ignore `native_spans` and `signals` unless debugging.
+- Letterhead text can come out split (`E XECUTIVE`). Ignore it.
+
 # when building python apps
 - first check what is the latest version installed on the system
 - then init a project using uv and use uv when installing packages dependecies etc..
